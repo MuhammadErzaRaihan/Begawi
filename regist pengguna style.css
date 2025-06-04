@@ -11,7 +11,6 @@
     --neutral-white: #FFFFFF;
     --neutral-dark: #333333;
     --neutral-grey: #B0B0B0;
-    /* Variabel lain dari file Anda bisa ditambahkan di sini jika diperlukan */
 }
 
 * {
@@ -26,10 +25,10 @@ body {
     color: var(--neutral-dark);
     display: flex;
     justify-content: center;
-    align-items: flex-start; /* Untuk scroll jika form panjang */
+    align-items: flex-start; 
     min-height: 100vh;
     padding: 20px;
-    overflow-y: auto; /* Memungkinkan scroll vertikal */
+    overflow-y: auto;
 }
 
 .registration-container {
@@ -38,7 +37,7 @@ body {
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 550px; /* Disesuaikan untuk form registrasi yang mungkin lebih panjang */
+    max-width: 550px; 
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -83,15 +82,15 @@ body {
     border: 1px solid var(--neutral-grey);
     border-radius: 8px;
     font-size: 15px;
-    font-family: 'Poppins', sans-serif; /* Memastikan font Poppins digunakan */
+    font-family: 'Poppins', sans-serif; 
     color: var(--neutral-dark);
     background-color: var(--neutral-white);
     transition: border-color 0.3s ease;
 }
 
 .input-group textarea {
-    min-height: 48px; /* Tinggi minimal, bisa bertambah jika teks banyak */
-    resize: vertical; /* Memungkinkan resize vertikal */
+    min-height: 48px; 
+    resize: vertical; 
 }
 
 .input-group select {
@@ -102,7 +101,7 @@ body {
     background-repeat: no-repeat;
     background-position: right 15px center;
     background-size: 16px;
-    padding-right: 40px; /* Memberi ruang untuk ikon panah */
+    padding-right: 40px; 
 }
 
 .input-group input:focus,
@@ -131,9 +130,9 @@ body {
 }
 
 .checkbox-item input[type="checkbox"] {
-    width: auto; /* Biarkan browser menentukan width */
+    width: auto;
     margin-right: 10px;
-    accent-color: var(--sasirangan-green-medium); /* Warna checkbox saat dicentang */
+    accent-color: var(--sasirangan-green-medium); 
     height: 16px;
     width: 16px;
     cursor: pointer;
@@ -142,10 +141,10 @@ body {
 
 .checkbox-item label {
     font-size: 14px;
-    font-weight: 400; /* Bobot font normal untuk label checkbox */
-    color: var(--neutral-dark); /* Warna font label dari variabel */
+    font-weight: 400; 
+    color: var(--neutral-dark); 
     cursor: pointer;
-    margin-bottom: 0; /* Reset margin bottom default dari label input-group */
+    margin-bottom: 0; 
 }
 
 .skill-description-group {
@@ -178,14 +177,14 @@ body {
 .btn-primary {
     background-color: var(--sasirangan-green-medium);
     color: var(--neutral-white);
-    margin-top: 20px; /* Memberi jarak atas sebelum tombol utama */
+    margin-top: 20px; 
 }
 
 .btn-primary:hover {
     background-color: var(--sasirangan-green-dark);
 }
 
-.login-link { /* Menggunakan nama kelas yang sama dengan form sebelumnya untuk konsistensi */
+.login-link {
     margin-top: 25px;
     font-size: 14px;
 }
@@ -203,4 +202,78 @@ body {
 
 .hidden {
     display: none !important;
+}
+
+/* Tambahan: Gradien latar belakang seperti login */
+body {
+  background: linear-gradient(135deg, var(--sasirangan-green-medium), var(--sasirangan-yellow));
+}
+
+/* Penyesuaian style container registrasi agar sepadan dengan login */
+.registration-container {
+  background-color: #fff;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  max-width: 550px;
+  text-align: center;
+  animation: fadeInUp 0.5s ease-in-out;
+}
+
+/* Logo konsisten */
+.logo-begawi {
+  font-size: 2rem;
+  color: var(--sasirangan-green-dark);
+}
+.logo-begawi span {
+  color: var(--sasirangan-yellow);
+}
+
+/* Efek input agar lebih interaktif */
+.input-group input,
+.input-group select,
+.input-group textarea {
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Fokus efek menyala hijau */
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus {
+  border-color: var(--sasirangan-green-medium);
+  box-shadow: 0 0 0 0.2rem rgba(93, 139, 47, 0.25);
+}
+
+/* Tombol registrasi konsisten */
+.btn-primary {
+  background-color: var(--sasirangan-green-dark);
+  border-color: var(--sasirangan-green-dark);
+  font-weight: 600;
+  transition: 0.3s ease-in-out;
+}
+.btn-primary:hover {
+  background-color: #1a4437;
+  border-color: #1a4437;
+}
+
+/* Link login bawah form */
+.login-link a {
+  color: var(--sasirangan-green-dark);
+  font-weight: 600;
+  text-decoration: none;
+}
+.login-link a:hover {
+  text-decoration: underline;
+}
+
+/* Animasi muncul lembut */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
