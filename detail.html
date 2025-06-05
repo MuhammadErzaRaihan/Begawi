@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Lowongan - Begawi</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="detail.css">
+
+</head>
+<body>
+
+    <div id="navbar-placeholder"></div>
+    <header class="job-header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-2 text-center text-md-start mb-3 mb-md-0">
+                    <img src="https://placehold.co/80x80/2A5C0F/FFFFFF?text=LOGO" alt="Logo Perusahaan" class="company-logo-detail" id="companyLogoDetail">
+                </div>
+                <div class="col-md-10">
+                    <h1 class="job-title-detail mb-1" id="jobTitle">Web Developer</h1>
+                    <h2 class="h5 company-name-detail mb-2" id="companyName">PT Cipta Solusi</h2>
+                    <div class="job-meta-detail text-muted-job">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                              <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                            </svg>
+                            <span id="jobLocation">Banjarbaru</span>
+                        </span>
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-briefcase-fill" viewBox="0 0 16 16">
+                              <path d="M6.5 1A1.5 1.5 0 0 0 5 2.5V3H1.5A1.5 1.5 0 0 0 0 4.5v1.384l7.614 2.03a1.5 1.5 0 0 0 .772 0L16 5.884V4.5A1.5 1.5 0 0 0 14.5 3H11v-.5A1.5 1.5 0 0 0 9.5 1h-3zm0 1h3a.5.5 0 0 1 .5.5V3H6v-.5a.5.5 0 0 1 .5-.5z"/>
+                              <path d="M0 12.5A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5V6.85L8.129 8.947a.5.5 0 0 1-.258 0L0 6.85v5.65z"/>
+                            </svg>
+                            <span id="jobType">Penuh Waktu (Full Time)</span>
+                        </span>
+                         <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-check-fill" viewBox="0 0 16 16">
+                              <path d="M4 .5a.5.5 0 0 0-1 0V1H2a2 2 0 0 0-2 2v1h16V3a2 2 0 0 0-2-2h-1V.5a.5.5 0 0 0-1 0V1H4V.5zM16 14V5H0v9a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2zm-5.146-5.146-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 0 1 .708-.708L7.5 10.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+                            </svg>
+                            Diposting: <span id="postedDate">3 Juni 2025</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="row">
+            <div class="col-lg-8">
+                <section id="jobDescriptionSection">
+                    <h3 class="section-title">Deskripsi Pekerjaan</h3>
+                    <div class="description-content" id="jobDescription">
+                        <p>Kami mencari seorang Web Developer yang bersemangat dan berpengalaman untuk bergabung dengan tim kami yang dinamis. Anda akan bertanggung jawab untuk mengembangkan, menguji, dan memelihara aplikasi web berkualitas tinggi.</p>
+                    </div>
+                </section>
+                 <section id="jobResponsibilitiesSection">
+                    <h3 class="section-title">Tanggung Jawab Utama</h3>
+                    <div class="description-content" id="jobResponsibilities">
+                        <ul><li>Merancang, mengembangkan, dan memelihara sisi front-end dan back-end aplikasi web.</li></ul>
+                    </div>
+                </section>
+                <section id="jobQualificationsSection">
+                    <h3 class="section-title">Kualifikasi</h3>
+                    <div class="description-content" id="jobQualifications">
+                        <ul><li>Minimal S1 di bidang Ilmu Komputer, Teknik Informatika, atau bidang terkait.</li></ul>
+                    </div>
+                </section>
+
+                <section id="howToApplySection">
+                    <h3 class="section-title">Cara Melamar</h3>
+                    <div class="description-content mb-3" id="howToApplyText">
+                        <p>Anda dapat melamar posisi ini langsung melalui website kami atau mengirimkan lamaran via email.</p>
+                        <p>Untuk lamaran via email, kirimkan CV terbaru dan portofolio Anda ke: <strong id="contactEmailApplyDisplay">karir@ciptasolusi.com</strong> dengan subjek email "<strong>Lamaran Web Developer - [Nama Anda]</strong>".</p>
+                    </div>
+                    <div class="mt-4">
+                        <button type="button" class="btn btn-apply-direct" data-bs-toggle="modal" data-bs-target="#applyModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send-check-fill me-2" viewBox="0 0 16 16">
+                                <path d="M15.964.686a.5.5 0 0 0-.65-.65L.767 5.855H.766l-.452.18a.5.5 0 0 0-.082.887l.41.26.001.002 4.995 3.178 3.178 4.995.002.002.26.41a.5.5 0 0 0 .886-.083l6-15Zm-1.833 1.89L6.637 10.07l-.215-.338a.5.5 0 0 0-.154-.154l-.338-.215 7.494-7.494 1.178-.471-.47 1.178Z"/>
+                                <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-1.993-1.679a.5.5 0 0 0-.686.172l-1.17 1.95-.547-.547a.5.5 0 0 0-.708.708l.774.773a.75.75 0 0 0 1.174-.144l1.335-2.226a.5.5 0 0 0-.172-.686Z"/>
+                            </svg>
+                            Lamar dari Web Ini
+                        </button>
+                        <br>
+                        <a href="mailto:karir@ciptasolusi.com?subject=Lamaran Web Developer - [Nama Anda]" class="btn btn-apply-email" id="applyViaEmailButton">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-fill me-2" viewBox="0 0 16 16">
+                                <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/>
+                            </svg>
+                            Lamar via Email
+                        </a>
+                        <br>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-lg-4">
+                <aside>
+                    <div class="card sidebar-card mb-4">
+                        <div class="card-header bg-light"><h4 class="h5 mb-0 section-title" style="border-bottom: none; margin-top:0; margin-bottom:0; font-size: 1.2rem;">Ringkasan Pekerjaan</h4></div>
+                        <div class="card-body">
+                            <ul>
+                                <li><strong>Kategori:</strong> <span id="sidebarCategory">IT & Perangkat Lunak</span></li>
+                                <li><strong>Lokasi:</strong> <span id="sidebarLocation">Banjarbaru</span></li>
+                                <li><strong>Tipe Pekerjaan:</strong> <span id="sidebarJobType">Penuh Waktu (Full Time)</span></li>
+                                <li><strong>Gaji:</strong> <span id="sidebarSalary">Rp 5.000.000 - Rp 7.000.000</span></li>
+                                <li><strong>Batas Waktu Lamaran:</strong> <span id="sidebarDeadline">3 Juli 2025</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card sidebar-card">
+                        <div class="card-header bg-light"><h4 class="h5 mb-0 section-title" style="border-bottom: none; margin-top:0; margin-bottom:0; font-size: 1.2rem;">Tentang Perusahaan</h4></div>
+                        <div class="card-body">
+                            <h5 class="h6" id="sidebarCompanyName">PT Cipta Solusi</h5>
+                            <p class="text-muted-job small" id="sidebarCompanyDescription">PT Cipta Solusi adalah perusahaan teknologi...</p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <div class="modal fade" id="applyModal" tabindex="-1" aria-labelledby="applyModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="applyModalLabel">Formulir Lamaran - Web Developer</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div id="formFeedback" class="alert d-none" role="alert"></div>
+            <form id="applicationForm">
+              <input type="hidden" id="jobIdField" name="jobId" value="webdev-ptcipta"> 
+              
+              <div class="mb-3">
+                <label for="applicantName" class="form-label">Nama Lengkap <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" id="applicantName" name="applicantName" required>
+              </div>
+              <div class="mb-3">
+                <label for="applicantEmail" class="form-label">Alamat Email <span class="text-danger">*</span></label>
+                <input type="email" class="form-control" id="applicantEmail" name="applicantEmail" required>
+              </div>
+              <div class="mb-3">
+                <label for="applicantPhone" class="form-label">Nomor Telepon (Opsional)</label>
+                <input type="tel" class="form-control" id="applicantPhone" name="applicantPhone" placeholder="Contoh: 081234567890">
+              </div>
+              <div class="mb-3">
+                <label for="coverLetter" class="form-label">Surat Lamaran Singkat (Opsional)</label>
+                <textarea class="form-control" id="coverLetter" name="coverLetter" rows="4" placeholder="Sampaikan mengapa Anda tertarik dengan posisi ini..."></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="cvFile" class="form-label">Unggah CV (Format: PDF, Maks: 2MB) <span class="text-danger">*</span></label>
+                <input type="file" class="form-control" id="cvFile" name="cvFile" accept=".pdf" required>
+                <div id="cvFileHelp" class="form-text">Pastikan file Anda dalam format PDF dan ukuran tidak melebihi 2MB.</div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+            <button type="submit" class="btn btn-apply-direct" id="submitApplicationButton" form="applicationForm">
+                <span class="spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+                Kirim Lamaran
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+    <script>
+        // Load Navbar
+        fetch('navbar.html')
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById('navbar-placeholder').innerHTML = data;
+            });
+
+        // Load Footer
+        fetch("footer.html")
+            .then(res => res.text())
+            .then(data => {
+                document.getElementById("footer-placeholder").innerHTML = data;
+            });
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Placeholder untuk data dinamis - sesuaikan dengan cara Anda memuat data
+            const jobData = { // Contoh data
+                id: "webdev-ptcipta",
+                title: "Web Developer",
+                company: "PT Cipta Solusi",
+                logo: "https://placehold.co/80x80/2A5C0F/FFFFFF?text=CS",
+                location: "Banjarbaru",
+                jobType: "Penuh Waktu (Full Time)",
+                postedDate: "3 Juni 2025",
+                category: "IT & Perangkat Lunak",
+                salary: "Rp 5.000.000 - Rp 7.000.000",
+                deadline: "3 Juli 2025",
+                description: "<p>Kami mencari seorang Web Developer yang bersemangat dan berpengalaman...</p>",
+                responsibilities: "<ul><li>Merancang, mengembangkan, dan memelihara...</li></ul>",
+                qualifications: "<ul><li>Minimal S1 di bidang Ilmu Komputer...</li></ul>",
+                contactEmail: "karir@ciptasolusi.com"
+            };
+
+            // Mengisi data ke elemen HTML (contoh)
+            document.getElementById('jobTitle').textContent = jobData.title;
+            document.getElementById('companyName').textContent = jobData.company;
+            if(document.getElementById('companyLogoDetail')) document.getElementById('companyLogoDetail').src = jobData.logo;
+            document.getElementById('jobLocation').textContent = jobData.location;
+            document.getElementById('jobType').textContent = jobData.jobType;
+            document.getElementById('postedDate').textContent = jobData.postedDate;
+            document.getElementById('applyModalLabel').textContent = `Formulir Lamaran - ${jobData.title}`;
+            document.getElementById('jobIdField').value = jobData.id;
+            
+            document.getElementById('jobDescription').innerHTML = jobData.description;
+            document.getElementById('jobResponsibilities').innerHTML = jobData.responsibilities;
+            document.getElementById('jobQualifications').innerHTML = jobData.qualifications;
+            
+            if(document.getElementById('contactEmailApplyDisplay')) document.getElementById('contactEmailApplyDisplay').textContent = jobData.contactEmail;
+            if(document.getElementById('applyViaEmailButton')) document.getElementById('applyViaEmailButton').href = `mailto:${jobData.contactEmail}?subject=Lamaran ${jobData.title} - [Nama Anda]`;
+
+            // Sidebar
+            document.getElementById('sidebarCategory').textContent = jobData.category;
+            document.getElementById('sidebarLocation').textContent = jobData.location;
+            document.getElementById('sidebarJobType').textContent = jobData.jobType;
+            document.getElementById('sidebarSalary').textContent = jobData.salary;
+            document.getElementById('sidebarDeadline').textContent = jobData.deadline;
+            document.getElementById('sidebarCompanyName').textContent = jobData.company;
+            // document.getElementById('sidebarCompanyDescription').textContent = // Deskripsi perusahaan jika ada
+
+            const applicationForm = document.getElementById('applicationForm');
+            const submitButton = document.getElementById('submitApplicationButton');
+            const spinner = submitButton.querySelector('.spinner-border');
+            const formFeedback = document.getElementById('formFeedback');
+            const cvFileInput = document.getElementById('cvFile');
+
+            applicationForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                formFeedback.classList.add('d-none'); // Sembunyikan feedback lama
+                formFeedback.textContent = '';
+
+                // Validasi file sederhana (bisa lebih detail)
+                if (cvFileInput.files.length === 0) {
+                    showFeedback('Harap unggah file CV Anda.', 'danger');
+                    return;
+                }
+                const cvFile = cvFileInput.files[0];
+                if (cvFile.type !== 'application/pdf') {
+                    showFeedback('Format file CV harus PDF.', 'danger');
+                    return;
+                }
+                if (cvFile.size > 2 * 1024 * 1024) { // Maks 2MB
+                    showFeedback('Ukuran file CV tidak boleh melebihi 2MB.', 'danger');
+                    return;
+                }
+
+                // Jika form valid menurut browser (untuk field required lainnya)
+                if (!applicationForm.checkValidity()) {
+                    applicationForm.classList.add('was-validated'); // Tampilkan pesan validasi Bootstrap
+                    showFeedback('Harap isi semua kolom yang wajib diisi.', 'warning');
+                    return;
+                }
+                applicationForm.classList.remove('was-validated');
+
+
+                submitButton.disabled = true;
+                spinner.classList.remove('d-none');
+
+                const formData = new FormData(applicationForm);
+                // formData.append('cvFile', cvFile); // Sudah otomatis ter-append karena nama input file 'cvFile'
+
+                // --- SIMULASI PENGIRIMAN KE BACKEND ---
+                console.log("FormData yang akan dikirim:", Object.fromEntries(formData));
+                console.log("File CV:", cvFile);
+
+                setTimeout(() => { // Simulasi delay jaringan
+                    // Ganti bagian ini dengan fetch() ke endpoint backend Anda yang sebenarnya
+                    // fetch('/api/apply', { method: 'POST', body: formData })
+                    // .then(response => response.json())
+                    // .then(data => {
+                    //    if (data.success) {
+                    //        showFeedback('Lamaran berhasil terkirim!', 'success');
+                    //        applicationForm.reset();
+                    //        var modal = bootstrap.Modal.getInstance(document.getElementById('applyModal'));
+                    //        modal.hide();
+                    //    } else {
+                    //        showFeedback(`Gagal mengirim lamaran: ${data.message || 'Terjadi kesalahan.'}`, 'danger');
+                    //    }
+                    // })
+                    // .catch(error => {
+                    //    console.error('Error:', error);
+                    //    showFeedback('Terjadi kesalahan koneksi. Coba lagi nanti.', 'danger');
+                    // })
+                    // .finally(() => {
+                    //    submitButton.disabled = false;
+                    //    spinner.classList.add('d-none');
+                    // });
+
+                    // Hasil simulasi:
+                    const isSuccess = Math.random() > 0.3; // Simulasi berhasil atau gagal
+                    if (isSuccess) {
+                        showFeedback('Lamaran berhasil terkirim (simulasi)!', 'success');
+                        applicationForm.reset();
+                        // Tutup modal setelah berhasil (jika menggunakan Bootstrap 5)
+                         var applyModalElement = document.getElementById('applyModal');
+                         var modal = bootstrap.Modal.getInstance(applyModalElement);
+                         if (modal) { // Pastikan modal instance ada
+                            modal.hide();
+                         } else { // Fallback jika getInstance gagal (misal modal belum diinisialisasi penuh)
+                            var newModal = new bootstrap.Modal(applyModalElement); // Inisialisasi jika belum
+                            newModal.hide();
+                         }
+                    } else {
+                        showFeedback('Gagal mengirim lamaran (simulasi). Coba lagi.', 'danger');
+                    }
+                    submitButton.disabled = false;
+                    spinner.classList.add('d-none');
+
+                }, 2000); // Akhir dari setTimeout (simulasi)
+            });
+
+            function showFeedback(message, type) {
+                formFeedback.textContent = message;
+                formFeedback.className = `alert alert-${type}`; // Hapus d-none, set kelas alert
+            }
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
