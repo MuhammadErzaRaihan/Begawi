@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Pencari Kerja - Begawi</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Poppins -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="navbar.css">
+
+    <style>
+        /* Mengatur font default dan latar belakang */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7f6;
+        }
+
+        /* Kontainer utama untuk dasbor */
+        .dashboard-container {
+            margin-top: 2rem;
+        }
+
+        /* Judul utama dasbor */
+        .dashboard-title {
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+
+        /* Gaya umum untuk card */
+        .card {
+            border: 1px solid #e0e0e0;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        /* Header pada card */
+        .card-header {
+            background-color: #fff;
+            border-bottom: 1px solid #e0e0e0;
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: #333;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        /* Foto profil */
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #ddd;
+        }
+        
+        /* Nama pengguna di profil */
+        .profile-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+        
+        /* Informasi kontak di bawah nama */
+        .profile-contact-info {
+            font-size: 0.95rem;
+            color: #7f8c8d;
+        }
+        
+        /* Label 'Tentang Saya' dan 'Keahlian Anda' */
+        .profile-section-label {
+            font-weight: 600;
+            color: #34495e;
+            margin-top: 1rem;
+        }
+        
+        /* Tag untuk keahlian */
+        .skill-tag {
+            background-color: #e9ecef;
+            color: #495057;
+            font-weight: 500;
+            padding: 0.3rem 0.75rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Placeholder untuk Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <main class="container dashboard-container">
+        <h1 class="dashboard-title">Dashboard Pengguna</h1>
+
+        <!-- Card untuk Ringkasan Profil -->
+        <div class="card mb-4">
+            <div class="card-header">
+                <span><i class="bi bi-person-lines-fill me-2"></i>Ringkasan Profil</span>
+                <a href="#" class="btn btn-outline-primary btn-sm">Edit Profil</a>
+            </div>
+            <div class="card-body p-4">
+                <div class="row align-items-center">
+                    <!-- Bagian Foto dan Tombol CV -->
+                    <div class="col-md-2 text-center">
+                        <img src="https://placehold.co/100x100/EFEFEF/333?text=Foto" alt="Foto Profil Raymondnonono" class="profile-pic mb-3">
+                        <a href="#" class="btn btn-primary w-100">
+                            <i class="bi bi-file-earmark-text me-1"></i> Lihat CV
+                        </a>
+                    </div>
+                    <!-- Bagian Detail Profil -->
+                    <div class="col-md-10">
+                        <h2 class="profile-name">raymondnonono</h2>
+                        <p class="profile-contact-info">
+                            <i class="bi bi-geo-alt-fill me-1"></i> Banjarmasin Barat | <i class="bi bi-telephone-fill ms-3 me-1"></i> 83143373756
+                        </p>
+                        
+                        <p class="profile-section-label">Tentang Saya:</p>
+                        <p>makanana</p>
+
+                        <p class="profile-section-label">Keahlian Anda:</p>
+                        <div>
+                            <span class="badge skill-tag">React.js</span>
+                            <span class="badge skill-tag">Vue.js</span>
+                            <span class="badge skill-tag">SEO Specialist</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card untuk Aktivitas Anda -->
+        <div class="card">
+            <div class="card-header">
+                <i class="bi bi-graph-up-arrow me-2"></i>Aktivitas Anda
+            </div>
+            <div class="card-body text-center p-5">
+                <p class="text-muted">Aktivitas lamaran Anda akan muncul di sini.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Fungsi untuk memuat navbar.html ke dalam placeholder
+        document.addEventListener("DOMContentLoaded", function() {
+            fetch("navbar.html")
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error("Network response was not ok " + response.statusText);
+                    }
+                    return response.text();
+                })
+                .then(data => {
+                    document.getElementById("navbar-placeholder").innerHTML = data;
+                })
+                .catch(error => {
+                    console.error("Error fetching navbar:", error);
+                    // Menampilkan pesan error jika navbar gagal dimuat
+                    document.getElementById("navbar-placeholder").innerHTML = '<div class="alert alert-danger">Gagal memuat navigasi.</div>';
+                });
+        });
+    </script>
+</body>
+</html>
